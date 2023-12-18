@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Smart Email Service
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+O Smart Email é um serviço dedicado a receber conteúdos de e-mails de uma fila do RabbitMQ e realizar o disparo desses e-mails.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Visão Geral do Projeto
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+O sistema foca exclusivamente no envio de e-mails para um serviço SMTP configurável.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Instruções de Instalação
+
+1. Clone o repositório.
+2. Abra o projeto no Visual Studio.
+3. Execute o projeto para realizar a instalação automática dos pacotes.
+4. Configure o Docker Compose e execute o arquivo docker-compose.
+
+## Requisitos do Sistema
+
+- .NET 8
+- RabbitMQ para mensageria
+
+## Como Utilizar o Serviço
+
+O projeto segue uma arquitetura de microservices, onde a API lida com a integração com o banco de dados. Um serviço monitora a fila do RabbitMQ, enviando e-mails conforme necessário.
+
+## Configuração
+
+É necessário configurar:
+
+- RabbitMQ
+- Serviço de e-mail SMTP
+
+## Contato
+
+Desenvolvido por Eglison Henrique da Silva de Souza,
+LinkedIn: [Eglison Souza](https://www.linkedin.com/in/eglisonsouza/)
